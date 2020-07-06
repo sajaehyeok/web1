@@ -16,21 +16,61 @@ a{
 #active{
   color: red;
 }
+h1{
+  font-size:48px;
+  text-align:center;
+  border-bottom:1px solid gray;
+  margin: 0;
+  padding:20px;
+}
+ol{
+  border-right: 1px solid gray;
+  width:100px;
+  margin:0;
+  padding: 33px;
+}
+body{
+  margin: 0px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#article{
+  padding-left: 25px;
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol{
+      border-right: none;
+  }
+
+h1{
+    border-bottom:none;
+  }
+}
 </style>
 </head>
 
 <body>
     <h1><a href="index.html">취업실무특강</a></h1>
+    <div id="grid">
   <ol>
-  <li><a href="1.html" class="saw" >1주차 강의</a></li>
-  <li><a href="2.html" class="saw" id="active">2주차 강의</a></li>
-  <li><a href="3.html" class="saw">3주차 강의</a></li>
-    <li><a href="4.html" class="saw">4주차 강의</a></li>
+  <li><a href="1.html" >1주차 강의</a></li>
+  <li><a href="2.html" >2주차 강의</a></li>
+  <li><a href="3.html" >3주차 강의</a></li>
+    <li><a href="4.html" >4주차 강의</a></li>
   </ol>
+
+  <div id="article">
 <h2>2주차 강의자료</h2>
 
 <a href="file:///C:/Users/KBS/Desktop/3학년%20여름방학/취업실무특강/강의자료/[강의자료]%20가톨릭대학교_취업준비실무_2강_채용%20트렌드와%20채용%20프로세스의%20이해_유재천.pdf
 " target="_blank" title="채용트렌드와 채용전략">
 강의자료 링크</a>
+</div>
+</div>
 </body>
 </html>
